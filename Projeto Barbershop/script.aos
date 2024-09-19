@@ -1,0 +1,11 @@
+<head>
+    <!-- Adicione o CSS do AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Seu CSS -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Seu JS -->
+    <script src="script.js" defer></script>
+    <!-- Adicione o JS do AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Restante do head -->
+</head>
