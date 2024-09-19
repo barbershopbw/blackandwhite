@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo barbershop.png" alt="Logo da Barbearia">
+            </div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#barbeiros">Barbeiros</a></li>
+                <li><a href="#estabelecimento">Estabelecimento</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+            <div class="social">
+                <a href="https://instagram.com/thebarbershop.bw" target="_blank">
+                    <img src="./images/Instagram_icon.png.webp" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="inicio">
+        <div class="hero">
+            <h1></h1>
+            <h1></h1>
+            <a href="https://noona.pt/blackandwhitebarbershop/book?_gl=1*ol36fs*_gcl_au*MTY0MzU5MjUzMy4xNzI2NDAzNTcx*_ga*MTQ2OTM2MzY4MC4xNzI2NDAzNTY5*_ga_5408W86YD3*MTcyNjc3ODg0NC40LjEuMTcyNjc3ODkxMS42MC4wLjA.&channel=https%3A%2F%2Fhq.noona.app%2F" class="btn-agendar">Agendar Corte</a>
+            <h1></h1>
+        </div>
+    </section>
+
+   <!-- Barbeiros -->
+<section id="barbeiros">
+    <h2>Os Nossos Barbeiros</h2>
+    <div class="barbeiros-container">
+        <div class="barbeiro">
+            <img src="./images/diogo alves.png" alt="Barbeiro 1">
+            <h3>Diogo Alves</h3>
+            <a href="https://www.instagram.com/diogo_alves1997/" target="_blank" class="btn-instagram">Instagram</a>
+        </div>
+        <div class="barbeiro">
+            <img src="./images/americano.png" alt="Barbeiro 2">
+            <h3>Big Sam</h3>
+            <p class="ceo">The CEO</p>
+            <a href="https://www.instagram.com/americanothebarber19/" target="_blank" class="btn-instagram">Instagram</a>
+        </div>
+        <div class="barbeiro">
+            <img src="./images/miguel frances.png" alt="Barbeiro 3">
+            <h3>O Francês</h3>
+            <a href="https://www.instagram.com/miguel.barber.87/" target="_blank" class="btn-instagram">Instagram</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Estabelecimento -->
+    <section id="estabelecimento">
+        <h2>O Nosso Estabelecimento</h2>
+        <div class="gallery">
+            <div class="gallery-carousel">
+                <img src="./images/outside2.jpg" alt="Estabelecimento 1">
+                <img src="./images/outside1.jpg" alt="Estabelecimento 1">
+                <img src="./images/inside1.jpg" alt="Estabelecimento 2">
+                <img src="./images/inside2.jpg" alt="Estabelecimento 3">
+                <img src="./images/inside3.jpg" alt="Estabelecimento 3">
+                <img src="./images/inside4.jpg" alt="Estabelecimento 3">
+                <img src="./images/inside5.jpg" alt="Estabelecimento 3">
+                <img src="./images/inside6.jpg" alt="Estabelecimento 3">
+                <img src="./images/inside7.jpg" alt="Estabelecimento 3">
+
+            </div>
+            <div class="gallery-controls">
+                <button class="prev">Anterior</button>
+                <button class="next">Próximo</button>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao">
+        <h2>Onde Estamos?</h2>
+        <div id="map"></div>
+    </section>
+
+    <script src="https://www.google.com/maps/place/R.+Calouste+Gulbenkian+7,+8700-372+Olhão/@37.0326842,-7.8353858,17z/data=!4m6!3m5!1s0xd0554d6a2c7e6d7:0x658d2962b3646902!8m2!3d37.0326799!4d-7.8328055!16s%2Fg%2F11csklktjb?hl=pt-PT&entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"></script>
+    <script src="script.js"></script>
+
+
+    <!-- Modal para visualização da imagem -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./images/logo barbershop.png" alt="Logo da Barbearia">
+        </div>
+        <div class="footer-info">
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#barbeiros">Barbeiros</a></li>
+                    <li><a href="#estabelecimento">Estabelecimento</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2024 Black and White BarberShop. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

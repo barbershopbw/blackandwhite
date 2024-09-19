@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header e Navegação */
+/* Header e Navegação */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    border-bottom: 2px solid #000000; /* Linha inferior preta */
+    overflow: hidden; /* Garante que o conteúdo não saia da área do header */
+}
+
+/* Sobreposição escura para reduzir a opacidade da imagem de fundo */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.74); /* Sobreposição escura com opacidade de 0.5 */
+    z-index: -1; /* Fica atrás do conteúdo do header */
+}
+
+/* Navegação no header */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a navegação */
+    position: relative;
+    width: 100%;
+}
+
+/* Outras regras de estilo para a navegação... */
+
+
+nav .logo {
+    position: absolute;
+    left: 20px; /* Espaço do lado esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .logo img {
+    height: 60px; /* Tamanho ajustado para melhor visualização */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Cor do texto padrão */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600; /* Peso da fonte para destaque */
+    font-family: 'Poppins', sans-serif; /* Fonte personalizada */
+    transition: color 0.3s ease;
+    position: relative; /* Necessário para o pseudo-elemento */
+} 
+nav ul li a:hover {
+    color: #000000;
+}
+
+nav .social {
+    position: absolute;
+    right: 20px; /* Espaço do lado direito */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .social img {
+    height: 40px; /* Tamanho ajustado para melhor visualização */
+    transition: opacity 0.3s ease;
+}
+
+nav .social img:hover {
+    opacity: 0.8;
+}
+
+/* Seções */
+section {
+    padding: 80px 20px;
+    margin-top: 80px; /* Espaço para o header fixo */
+}
+
+/* Página Inicial */
+/* Seções */
+section {
+    padding: 0; /* Remove o padding para que o hero ocupe a altura total */
+    margin-top: 60px; /* Espaço para o header fixo */
+}
+
+/* Página Inicial */
+/* Seções */
+/* Seções */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+section {
+    padding: 0; /* Remove o padding para que o hero ocupe a altura total */
+    margin-top: 60px; /* Espaço para o header fixo */
+}
+
+/* Seção de Início com Imagem de Fundo */
+#inicio {
+    position: relative;
+    height: 100vh; /* Altura completa da tela */
+    background: url('./images/inside1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    overflow: hidden; /* Garante que nada saia da área visível */
+    z-index: 1; /* Define um z-index para garantir que o hero tenha prioridade */
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Estilização da Seção Hero */
+.hero {
+    position: relative;
+    width: 550px; /* Largura e altura iguais para criar a forma redonda */
+    height: 550px; 
+    background: url('./images/logo\ barbershop.png') no-repeat center center;
+    background-size: contain; /* Ajusta o tamanho do logo para caber no círculo */
+    border-radius: 50%; /* Cria a forma redonda */
+    border: 5px solid #fff; /* Borda branca ao redor do círculo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Para garantir que nada do conteúdo saia dos limites */
+
+}
+
+.hero:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Sobreposição escura adicional com menos opacidade */
+    z-index: -1; /* Fica atrás do conteúdo */
+    border-radius: 15px;
+}
+
+/* Texto do Hero */
+.hero h1 {
+    font-size: 4.5em; /* Tamanho grande para destaque */
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Playfair Display', serif; /* Tipografia estilizada */
+    font-weight: 700; /* Peso da fonte em negrito */
+    letter-spacing: -1px; /* Espaçamento entre letras mais estreito */
+    color: #fff; /* Cor do texto */
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.8), /* Sombra leve */
+        0 0 25px rgba(0, 0, 0, 0.4), /* Sombra difusa */
+        0 0 5px rgba(0, 0, 0, 0.8); /* Sombra interna mais escura */
+    line-height: 1.2; /* Altura da linha para melhorar a legibilidade */
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Botão Agendar */
+/* Botão Agendar */
+/* Estilização Personalizada do Botão no Hero */
+/* Estilização Personalizada e Visível do Botão no Hero */
+.hero .btn-agendar {
+    display: inline-block;
+    background-color: #fff; /* Fundo branco para maior contraste */
+    color: #000; /* Texto preto */
+    padding: 15px 30px;
+    text-decoration: none;
+    border: 3px solid #000; /* Borda preta mais grossa para destaque */
+    border-radius: 50px; /* Bordas mais arredondadas para suavidade */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    letter-spacing: 1px; /* Aumenta o espaçamento entre letras */
+    transition: all 0.3s ease;
+    margin-top: 20px; /* Espaço acima do botão */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte para destacar o botão */
+    z-index: 3; /* Mantém o botão acima de outros elementos */
+}
+
+/* Efeitos ao Passar o Mouse no Botão */
+.hero .btn-agendar:hover {
+    background-color: #000; /* Fundo preto ao passar o mouse */
+    color: #fff; /* Texto branco para contraste */
+    border-color: #fff; /* Borda branca ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa no hover */
+}
+
+/* Efeito ao Clicar no Botão */
+.hero .btn-agendar:active {
+    background-color: #333; /* Fundo cinza escuro ao clicar */
+    color: #fff; /* Texto permanece branco */
+    border-color: #fff; /* Borda branca ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra reduzida ao clicar */
+    transform: scale(1.05); /* Leve redução ao clicar */
+}
+
+
+/* Efeitos Especiais no Botão (antes de hover) */
+.hero .btn-agendar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Sobreposição clara */
+    border-radius: 30px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.hero .btn-agendar:hover::before {
+    opacity: 1; /* Sobreposição clara visível ao passar o mouse */
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Barbeiros */
+
+/* Estilo para a Seção "Os Nossos Barbeiros" */
+#barbeiros {
+    position: relative;
+    padding: 50px 20px;
+    background: url('./images/Design sem nome (1).png') no-repeat center center; /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a seção */
+    background-position: center center; /* Garante que a imagem esteja centralizada */
+    background-attachment: fixed; /* Faz com que a imagem de fundo permaneça fixa durante o scroll (opcional) */
+    color: #fff; /* Cor do texto padrão para contraste com o fundo */
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo não saia da seção */
+    margin: 0;
+    min-height: 100vh; /* Garante que a seção ocupe pelo menos a altura da viewport */
+}
+
+#barbeiros h2 {
+    font-size: 3.5em; /* Tamanho grande para destaque */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    font-family: 'Playfair Display', serif; /* Tipografia estilizada */
+    font-weight: 700; /* Peso da fonte em negrito */
+    letter-spacing: -1px; /* Espaçamento entre letras mais estreito */
+    color: #fff; /* Cor do texto em branco */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais forte para destaque */
+        0 0 10px rgba(0, 0, 0, 0.6); /* Sombra difusa para legibilidade */
+    margin-top: 0; /* Remove margens padrão */
+}
+
+.barbeiros-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px; /* Adiciona padding interno para alinhamento */
+}
+
+.barbeiro {
+    text-align: center;
+    border: 2px solid #fff; /* Borda branca para contraste */
+    border-radius: 15px; /* Borda arredondada */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    background: rgba(0, 0, 0, 0.6); /* Fundo preto com leve transparência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    padding: 10px;
+    width: 250px; /* Largura fixa para consistência */
+    position: relative;
+    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque ao fundo */
+}
+
+.barbeiro img {
+    width: 100%;
+    height: 200px; /* Altura fixa para consistência */
+    object-fit: cover;
+    border-bottom: 2px solid #fff; /* Borda inferior branca */
+    border-radius: 15px 15px 0 0; /* Borda arredondada superior */
+}
+
+.barbeiro h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff; /* Cor do texto do nome do barbeiro em branco */
+}
+
+.barbeiro a {
+    color: #000000; /* Cor do link em branco */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+.barbeiro:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    border-color: #ffffff; /* Cor da borda muda no hover */
+}
+
+/* Efeito de destaque no título do barbeiro */
+.barbeiro h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #fff; /* Linha branca abaixo do título */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* Botão Instagram */
+.btn-instagram {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-instagram:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+/* Estabelecimento */
+/* Estabelecimento */
+
+#estabelecimento {
+    position: relative;
+    padding: 50px 20px;
+    background: url('./images/outside3.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a seção */
+    background-position: center center; /* Centraliza a imagem de fundo */
+    color: #fff; /* Cor do texto para contraste com o fundo */
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo não saia da seção */
+    margin: 0;
+}
+
+/* Estilo do título da seção */
+#estabelecimento h2 {
+    font-size: 3em; /* Tamanho grande para destaque */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    font-family: 'Playfair Display', serif; /* Tipografia estilizada */
+    font-weight: 700; /* Peso da fonte em negrito */
+    letter-spacing: -1px; /* Espaçamento entre letras mais estreito */
+    color: #fff; /* Cor do texto */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais forte para destaque */
+        0 0 10px rgba(0, 0, 0, 0.6); /* Sombra difusa para legibilidade */
+    margin-top: 0; /* Remove margens padrão */
+}
+
+
+.gallery {
+    position: relative;
+    padding: 20px; /* Adiciona padding para espaçamento */
+}
+
+.gallery-carousel img {
+    width: 100%; /* Largura completa do contêiner */
+    height: 300px; /* Altura ajustada das imagens */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: block; /* Garante que a imagem seja exibida corretamente */
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+}
+
+.gallery-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gallery-controls button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-controls button:hover {
+    background: #000;
+    transform: scale(1.05);
+}
+
+
+/* Localização */
+
+#localizacao {
+    position: relative;
+    padding: 50px 20px;
+    background: url('./images/panorama.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a seção */
+    color: #fff; /* Cor do texto para contraste com o fundo */
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo não saia da seção */
+    margin: 0;
+}
+
+/* Estilo do título da seção */
+#localizacao h2 {
+    font-size: 2.5em; /* Tamanho grande para destaque */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    font-family: 'Playfair Display', serif; /* Tipografia estilizada */
+    font-weight: 700; /* Peso da fonte em negrito */
+    letter-spacing: -1px; /* Espaçamento entre letras mais estreito */
+    color: #fff; /* Cor do texto */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais forte para destaque */
+        0 0 10px rgba(0, 0, 0, 0.6); /* Sombra difusa para legibilidade */
+    margin-top: 0; /* Remove margens padrão */
+}
+
+#map {
+    width: 100%;
+    height: 400px; /* Altura do mapa */
+    border: 1px solid #ddd; /* Borda leve para o mapa */
+    background: rgba(0, 0, 0, 0.3); /* Fundo transparente para o mapa se a imagem de fundo não cobrir completamente */
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .barbeiros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000; /* Sobrepõe outros conteúdos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Fundo escuro com opacidade */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px; /* Reduzido de 40px para 20px */
+    text-align: center;
+    font-size: 14px; /* Diminui o tamanho da fonte */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduz o espaçamento entre os itens */
+}
+
+.footer-logo img {
+    height: 50px; /* Diminui o tamanho da logo */
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 10px 0; /* Reduz a margem entre os elementos */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Reduz o espaçamento entre os links */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Diminui o tamanho da fonte */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin: 0 5px; /* Reduz o espaçamento entre os ícones de redes sociais */
+}
+
+.footer-social img {
+    height: 30px; /* Diminui o tamanho dos ícones sociais */
+}
+
+.footer-copy {
+    font-size: 12px; /* Diminui o tamanho da fonte da mensagem de copyright */
+    margin-top: 10px;
+}
